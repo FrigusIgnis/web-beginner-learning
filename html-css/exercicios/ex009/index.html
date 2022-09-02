@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript, e foi formatado utilizando a tag code.</p>
+    <p>O comando <code>open('a','fatura-mensal.txt')</code> é escrito em Python e também foi formatado utilizando a tag code.</p>
+    <p>Embora a tag formate o trecho do código corretamente, há um problema com a estrutura do código, por exemplo:</p>
+    <code>
+        def fazerCopiaArquivo(nomeArquivo):
+            nomeCopiaArquivo = nomeArquivo + "-copia.txt"
+            copiaArquivo = open('a', nomeCopiaArquivo)
+            arquivo = open('r', nomeArquivo)
+
+            for linha in arquivo.readlines():
+                copiaArquivo.write(linha)
+
+            print("Arquivo copiado com sucesso!\n")
+    </code>
+    <p>O código foi formatado para estar na mesma linha e perdeu sua indentação. E, para evitar isto, utiliza-se a tag pre antes da tag code. Segue abaixo: </p>
+    <pre>
+        <code>
+    def fazerCopiaArquivo(nomeArquivo):
+        nomeCopiaArquivo = nomeArquivo + "-copia.txt"
+        copiaArquivo = open('a', nomeCopiaArquivo)
+        arquivo = open('r', nomeArquivo)
+
+        for linha in arquivo.readlines():
+            copiaArquivo.write(linha)
+
+        print("Arquivo copiado com sucesso!\n")
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como dizia o filósofo Alan Watts: <q>O indivíduo que pensa o tempo todo não tem nada mais para pensar além de seus próprios pensamentos, então ele perde seu contato com a realidade e começa a viver num mundo de ilusões.</q></p>
+    <p>A citação acima foi formatada utilizando a tag q, cuja realiza uma citação simples.</p>
+    <p>Seguindo o pensamento de Watts:</p>
+    <blockquote cite="https://alanwatts.org/2-5-6-art-of-meditation/">
+        Por pensamentos, quis dizer especificamente as vozes na cabeça. Uma repetição perpétua e compulsiva de palavras avaliativas e calculadoras[...] Como todas as coisas, é útil com moderação[...]
+    </blockquote>
+    <p>A citação acima foi formatada utilizando a tag blockquote, cuja realiza uma citação em bloco.</p>
+
+    <h2>Abreviações</h2>
+    <p>Este é um documento de estudo referente à linguagem Web(<abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>).</p>
+    <p>As abreviações acima foram formatadas com a tag abbr.</p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Esta é uma expressão que foi invertida utilizando a tag bdo, indo da direita para a esquerda.</bdo></p>
+</body>
+</html>
