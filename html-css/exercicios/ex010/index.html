@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1>Links e Âncoras</h1>
+    <h2>Usando links externos</h2>
+    <p>Esta é <a href="https://www.youtube.com/watch?v=T_lC2O1oIew" target="_blank" rel="external">uma das minhas músicas favoritas</a> e, para fazer este link, foi utilizada a tag <ins>a</ins> com o atributo <ins>href</ins> para referenciar o link externo.</p>
+    <p>Os links são uma forma de referência a outras páginas Web que utilizam o protocolo HTTP(Podem existir outros protocolos, porém este é o mais comum).</p>
+    <p>O link anterior apresenta um comportamento ideal para <strong>links externos</strong>, com o uso das tags <ins>target</ins> e <ins>rel</ins>, abrindo uma nova página para acessá-lo. Abaixo está um exemplo de comportamento "eurístico".</p>
+    <p>Este é um <a href="https://www.youtube.com/watch?v=d_HlPboLRL8">link externo</a> com a definição acima. Ps.: Sim, é uma outra música que gosto muito.</p>
+    <p>Percebe-se que a página atual é sobrescrita pela página do link, cuja ação não é recomendada quando trata-se de um link externo.</p>
+
+    <h2>Usando links internos</h2>
+    <p>Esta é a página principal do site. Para acessar a segunda, clique <a href="page002.html"
+        target="_self" rel="next">aqui</a>.</p>
+    <p>Há também uma página de notícias, para acessá-la, clique <a href="noticias/page003.html" target="_self">aqui</a>.</p>
+
+    <h2>Links para download</h2>
+    <p>Abaixo estão alguns arquivos de autoria própria apenas para fins de estudo: o documento 1 possui um pequeno texto e o documento 2 possui alguns comandos do git bash, os quais utilizo para o aprendizado.</p>
+    <ul>
+        <li><a href="documentos/documento01.pdf" download="documento01.pdf" type="application/pdf">Prosa escrita na minha adolescência</a></li>
+        <li><a href="documentos/documento02.pdf" download="documento02.pdf" type="application/pdf">Alguns comandos do git bash</a></li>
+        <li><a href="documentos/arquivo01.zip" type="application/zip">Arquivo zipado</a></li>
+    </ul>
+</body>
+</html>
