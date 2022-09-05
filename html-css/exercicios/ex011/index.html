@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <h2>Imagens dinâmicas</h2>
+    <p>Este site utiliza a tag &lt;pictures&gt; e o uso de 'medias' para adaptar imagens para algumas resoluções específicas, variando de acordo com o tamanho da resolução do dispositivo/navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h2>Reprodução de áudio</h2>
+    <p>A reprodução e o controle de áudios no HTML5 é feita a partir do uso da tag &lt;audio&gt;.</p>
+
+    <p>Um exemplo de uso limitado da tag(utilizando o atributo src e controls dentro do campo da própria tag): </p>
+    <audio src="midia/blue-mood-robert-munzinger.mp3" controls></audio>
+
+    <p>Um exemplo de uso da tag a qual utiliza o atributo source dentro da tag, além de fornecer outras opções de reprodução de arquivo: </p>
+    <audio preload="metadata" controls>
+        <source src="midia/blue-mood-robert-munzinger.mp3" type="audio/mpeg">
+        <source src="midia/blue-mood-robert-munzinger.ogg" type="audio/ogg">
+        <p>Caso esteja tendo problemas para reproduzir o áudio em seu navegador, clique <a href="midia/blue-mood-robert-munzinger.mp3">aqui</a> para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>
