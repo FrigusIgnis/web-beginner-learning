@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px;
+            background-color: #BA5C12;
+        }
+
+        header {
+            margin:auto
+        }
+
+        main {
+            margin: auto;
+        }
+        
+        footer {
+            margin: auto;
+            background-color: #CAFFD0;
+            text-align: center;
+            padding: 7px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        nav {
+            background-color: #e7ffea;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.427);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #313d43;
+        }
+
+        nav > a:hover {
+            text-decoration: dashed;
+            color: #82a4b5;
+        }
+
+        section {
+            margin: auto;
+        }
+
+        article {
+            background-color: #a5feb0;
+            padding: 10px;
+        }
+
+        aside {
+            padding: 2px;
+            text-align: right;
+        }
+
+        .boxes{
+            background-color: #CAFFD0;
+            margin: 12px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="boxes">
+        <h1>Grouping tags</h1>
+        <p>As <em>grouping tags</em> são utilizadas de modo a organizar o conteúdo do documento para tornar seus entendimento e claridade melhores.</p>
+
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+
+    <main class="boxes">
+        <section id="sessoes">
+            <p>Notícias do Mundo</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia de última hora</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos expedita eos eaque facere minima hic consectetur esse id alias! Ipsam et pariatur distinctio ea nisi aliquam, cum recusandae corrupti!</p>
+                <aside>
+                    <p>Escrito por Lorem.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Exemplo de nota de rodapé</p>
+    </footer>
+</body>
+</html>
