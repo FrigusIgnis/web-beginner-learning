@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+    <link rel="shortcut icon" href="imagens/favicon-io.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Desafio da imagem flexível</h1>
+    <p>Este desafio consiste em redimensionar a imagem de acordo com a resolução do navegador.</p>
+    <picture>
+        <source media="(max-width:600px)" srcset="imagens/imagem-500.png" type="image/png">
+        <source media="(max-width:800px)" srcset="imagens/imagem-700.png" type="image/png">
+        <img src="imagens/imagem-full.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>
