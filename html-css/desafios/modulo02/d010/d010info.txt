@@ -1,0 +1,1 @@
+This challenge was a mini project with the purpose of making a responsive website page using incorporated videos, links, anchors, images, texts, lists, and, of course, cascading stylesheets to add responsiveness. The web page has some informations about previous Android versions(more precisely, 1.5 to 9.0) and its main subject is about the origin of the symbol that represents it.
