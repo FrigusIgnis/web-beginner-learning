@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-image: url('imagens/pattern003.png');
+    background-image: url(imagens/pattern003.png);
 }
 
 div.quadrado {
@@ -22,5 +22,5 @@ div#q2 {
 }
 
 div#q3 {
-    background-image: url('imagens/pattern002.png');
+    background-image: url(imagens/pattern002.png);
 }
