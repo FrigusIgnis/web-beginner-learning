@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas - Parte 2</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: burlywood;
+            color: rgb(39, 38, 38)
+        }
+
+        tfoot {
+            font-size: 0.8em;
+        }
+
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicação de tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Continentes</th>
+                <th>Média de temperatura(ºC)</th>
+                <th>Média de temperatura(F)</th>
+                <th>Média de temperatura(°K)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>América</strong></td>
+                <td>20°</td>
+                <td>68</td>
+                <td>293</td>
+            </tr>
+            <tr>
+                <td><strong>Europa</strong></td>
+                <td>-7° | 23°</td>
+                <td>23.4 | 73.4</td>
+                <td>266 | 296</td>
+            </tr>
+            <tr>
+                <td><strong>Ásia</strong></td>
+                <td>25° / 32°</td>
+                <td>77 / 89.6</td>
+                <td>298 / 305</td>
+            </tr>
+            <tr>
+                <td><strong>Oceania</strong></td>
+                <td>18° / 25°</td>
+                <td>64.4 / 77</td>
+                <td>291 / 298</td>
+            </tr>
+            <tr>
+                <td><strong>África</strong></td>
+                <td>10° | 27°</td>
+                <td>50 | 80.6</td>
+                <td>283 | 300</td>
+            </tr>
+            <tr>
+                <td><strong>Antártida</strong></td>
+                <td>-30 / -65°</td>
+                <td>-22 / -85</td>
+                <td>243 / 208</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4">Dados coletados por pesquisas feitas no Google</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
