@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas - Parte 5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            margin: auto;
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .titulo {
+            background-color: blanchedalmond;
+        }
+
+        .ano {
+            background-color: bisque;
+        }
+
+        .critica {
+            background-color: burlywood;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="titulo">
+            <col class="ano">
+            <col class="critica">
+        </colgroup>
+        <caption>Filmes - Ghibli</caption>
+        <tr>
+            <th>Título</th>
+            <th>Ano</th>
+            <th>Avaliação crítica</th>
+        </tr>
+        <tr>
+            <td>Castle in the sky</td>
+            <td>1986</td>
+            <td>8.0/10</td>
+        </tr>
+        <tr>
+            <td>My Neighbor Totoro</td>
+            <td>1988</td>
+            <td>8.1/10</td>
+        </tr>
+        <tr>
+            <td>Only Yesterday</td>
+            <td>1991</td>
+            <td>7.6/10</td>
+        </tr>
+        <tr>
+            <td>The Cat Returns</td>
+            <td>1995</td>
+            <td>7.2/10</td>
+        </tr>
+        <tr>
+            <td>Howl's Moving Castle</td>
+            <td>2004</td>
+            <td>8.2/10</td>
+        </tr>
+        <tr>
+            <td>When Marnie Was There</td>
+            <td>2014</td>
+            <td>7.7/10</td>
+        </tr>
+    </table>
+</body>
+</html>
