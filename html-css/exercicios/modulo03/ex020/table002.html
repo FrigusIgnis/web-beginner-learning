@@ -15,6 +15,12 @@
             border-collapse: collapse;
         }
 
+        caption {
+            padding: 5px;
+            font: normal bold 0.75em Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
         thead {
             background-color: burlywood;
             color: rgb(39, 38, 38)
@@ -25,6 +31,7 @@
         }
 
         td, th{
+            font-size: 0.8em;
             border: 1px solid black;
             text-align: center;
         }
@@ -33,12 +40,13 @@
 <body>
     <h1>Aplicação de tabelas grandes</h1>
     <table>
+        <caption>Média das temperaturas(Inverno | Verão ou variações) de cada continente</caption>
         <thead>
             <tr>
-                <th>Continentes</th>
-                <th>Média de temperatura(ºC)</th>
-                <th>Média de temperatura(F)</th>
-                <th>Média de temperatura(°K)</th>
+                <th scope="col">Continentes</th>
+                <th scope="col">Média de temperatura(ºC)</th>
+                <th scope="col">Média de temperatura(F)</th>
+                <th scope="col">Média de temperatura(°K)</th>
             </tr>
         </thead>
         <tbody>
