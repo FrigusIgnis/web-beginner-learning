@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células Parte 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        td {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="col" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="3">A</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Bubble</td>
+                <td>Alive</td>
+            </tr>
+            <tr>
+                <td>Bruno Mendonça</td>
+                <td>Howl's Moving Castle</td>
+                <td>Hana-bi</td>
+                <td>Drifting Home</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Bacurau</td>
+                <td>Operação Big Hero</td>
+                <td>Hereditário</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="3">B</th>
+                <td>Beatriz Souza</td>
+                <td>Matrix</td>
+                <td>Batman</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Rambo</td>
+                <td>Hulk</td>
+                <td>Django</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Wall-e</td>
+                <td>Oblivion</td>
+                <td>Inception</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
