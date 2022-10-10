@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe - segurança</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Homepage</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor id quibusdam distinctio commodi dolores deleniti labore officiis? Quos illo porro possimus odit, eum sed adipisci illum perspiciatis eaque! Quod! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero earum enim tenetur? Minima soluta quisquam vero voluptatibus doloremque quia amet, eveniet molestias quasi laboriosam non illum eaque exercitationem. Possimus, blanditiis.</p>
+
+    <iframe src="paginaCadastro.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referer">Não foi possível carregar janela.</iframe>
+
+    <p>Os atributos sandbox e referrerpolicy funcionam como parâmetros de segurança para evitar vazamento de dados ou outros ataques que possam ocorrer.</p>
+</body>
+</html>
