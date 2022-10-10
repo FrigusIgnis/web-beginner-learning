@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - Exemplo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color:cadetblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkcyan;
+        }
+
+        a:hover {
+            color:darkgreen;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a::before {
+            content: '✧ ';
+        }
+        a::after {
+            content: ' ✧';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/nicolas-silva-araujo/" target="_blank" rel="external">Perfil do LinkedIn</a></li>
+        <li><a href="https://github.com/NicolasSilvaDA" target="_blank" rel="external">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=6ctgWuEsn_g" target="_blank" rel="external">Música atual</a></li>
+    </ul>
+</body>
+</html>
