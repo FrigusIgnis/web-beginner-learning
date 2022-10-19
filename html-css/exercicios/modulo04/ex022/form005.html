@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários parte 5</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Sexo</legend>
+            <div>
+                <input type="radio" name="sx" id="isxmas" value="M">
+                <label for="isxmas">Masculino</label>
+
+                <input type="radio" name="sx" id="isxfem" value="F">
+                <label for="isxfem">Feminino</label>
+
+                <input type="radio" name="sx" id="isxnb" value="NB">
+                <label for="isxnb">Não-Binário</label>
+
+                <input type="radio" name="sx" id="isxoutro" value="O">
+                <label for="isxoutro">Outro</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <div>
+                <input type="checkbox" name="salto" id="isalto">
+                <label for="isalto">Salto com vara</label>
+
+                <input type="checkbox" name="pati" id="ipati">
+                <label for="ipati">Patinação no gelo</label>
+
+                <input type="checkbox" name="esgri" id="iesgri">
+                <label for="iesgri">Esgrima</label>
+
+                <input type="checkbox" name="ginas" id="iginas">
+                <label for="iginas">Ginástica</label>
+
+                <input type="checkbox" name="corri" id="icorri">
+                <label for="icorri">Corrida</label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
