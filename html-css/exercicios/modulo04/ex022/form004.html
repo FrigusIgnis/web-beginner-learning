@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários parte 4</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome </label>
+                <input type="text" name="nome" id="inome" minlength="2" maxlength="50" required>
+            </div>
+            <div>
+                <label for="iemail">E-mail </label>
+                <input type="email" name="email" id="iemail" required>
+            </div>
+            <div>
+                <label for="itel">Telefone celular </label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}$" placeholder="(11)12345-6789" required>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
