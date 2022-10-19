@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários parte 6</title>
+    <style>
+        div {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.py">
+        <div>
+            <label for="icor">Cor </label>
+            <input type="color" name="cor" id="icor">
+        </div>
+        <div>
+            <label for="inivel">Nível de satisfação </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
+        </div>
+        <div>
+            <label for="ifoto">Foto do perfil </label>
+            <input type="file" name="foto" id="ifoto">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
