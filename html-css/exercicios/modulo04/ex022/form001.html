@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--método GET: Utilizado para dados não sensíveis
+    método POST: Utilizado para dados sensíveis como senhas e CPF e envio de arquivos-->
+    <form autocomplete="off" action="" method="post">
+        <p>
+            <label for="nomeTexto">Nome: </label>
+            <input type="text" name="nameInput" id="nomeTexto">
+        </p>
+
+        <p>
+            <label for="sobrenomeTexto">Sobrenome: </label>
+            <input type="text" name="sobrenomeInput" id="sobrenomeTexto">
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
