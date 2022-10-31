@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/media005.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
+<body onresize="checkTamanho()">
     <header>
         <h1>Menu responsivo</h1>
         <i id="burgerMenu" class="material-icons" onclick="clickMenu()">menu</i>
@@ -34,6 +34,14 @@
                 menuList.style.display = 'none';
             } else {
                 menuList.style.display = 'block';
+            }
+        }
+
+        function checkTamanho() {
+            if (window.innerWidth >= 768) {
+                menuList.style.display = 'block';
+            } else {
+                menuList.style.display = 'none';
             }
         }
     </script>

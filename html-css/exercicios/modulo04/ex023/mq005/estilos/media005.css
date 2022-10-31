@@ -81,3 +81,34 @@ main p {
     text-indent: 25px;
     text-align: justify;
 }
+
+@media screen and (min-width: 768px) {
+    header i#burgerMenu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+    
+    menu ul li {
+        display: inline-block;
+        margin: 0 7px;
+    }
+    
+    menu ul li a {
+        background-color: cadetblue;
+        border-radius: 5px 5px 0 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    menu ul li a:hover {
+        background-color: mediumturquoise;
+        transition-duration: 0.1s;
+    }
+
+    main {
+        width: 730px;
+    }
+}
