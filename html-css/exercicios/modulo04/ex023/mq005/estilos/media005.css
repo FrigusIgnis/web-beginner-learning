@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+header {
+    width: 100vw;
+    background-color: coral;
+}
+
+header i#burgerMenu {
+    display: block;
+    padding: 5px;
+    background-color:  rgb(18, 161, 161);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+i#burgerMenu:hover {
+    background-color: rgb(45, 180, 180);
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+menu {
+    display: none;
+}
+
+menu ul {
+    list-style-type: none;
+}
+
+menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: cadetblue;
+    color: whitesmoke;
+    border-top: 0.5px solid rgb(221, 219, 219);
+    text-align: center;
+}
+menu ul li a:hover {
+    background-color: mediumturquoise;
+    transition-duration: 0.1s;
+}
+
+main {
+    width: 90vw;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: coral;
+}
+
+main h2 {
+    color: whitesmoke;
+}
+
+main p {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    color: whitesmoke;
+    line-height: 1.25em;
+    text-indent: 25px;
+    text-align: justify;
+}

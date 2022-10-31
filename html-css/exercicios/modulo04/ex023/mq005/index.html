@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Parte 5</title>
+    <link rel="stylesheet" href="estilos/media005.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <h1>Menu responsivo</h1>
+        <i id="burgerMenu" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="menuList">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>O menu altera de acordo com a largura da tela</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nisi perferendis accusantium, doloribus vel eveniet veniam fuga, distinctio possimus explicabo suscipit reiciendis consectetur laborum maxime totam harum placeat iure quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores beatae cumque earum porro voluptatum, voluptatem maxime dicta, ex distinctio quam corporis laboriosam ut harum illo facilis delectus obcaecati dolorum sint.</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem reprehenderit adipisci eius debitis ut error cum ea ex incidunt voluptate corrupti blanditiis libero quae delectus dignissimos animi excepturi, modi eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus odio quas distinctio modi delectus harum debitis rem, quaerat, dicta ex pariatur quam cupiditate esse molestiae adipisci qui eaque tempore mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur ab quibusdam vel reprehenderit. Quia, accusantium nulla. Perspiciatis, dicta. Possimus ullam minima soluta est quam quod in repellendus adipisci cupiditate dignissimos.</p>
+    </main>
+    <script>
+        function clickMenu() {
+            if (menuList.style.display == 'block') {
+                menuList.style.display = 'none';
+            } else {
+                menuList.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
