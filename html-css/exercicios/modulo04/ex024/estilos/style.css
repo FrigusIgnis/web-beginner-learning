@@ -58,9 +58,94 @@ div#form {
     text-align: justify;
 }
 
+div#form > h1 {
+    margin-bottom: 10px;
+}
 
+div#form > p {
+    margin: 10px 0;
+    font-size: .9em;
+}
+
+div.campo {
+    display: block;
+    position: relative;
+    margin: 7px 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: 0.25px solid black;
+    background-color: var(--cor1);
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > i {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 30px;
+    font-size: 1.5em;
+    color: var(--cor3);
+}
+
+div.campo > input {
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: calc(100% - 35px);
+    height: 100%;
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: var(--cor3);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    border: 0.25px solid black;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
+
+a.botao {
+    margin: 8px 0;
+    padding: 2px 0 5px 5px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    border: 0.25px solid black;
+    border-radius: 5px;
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+a.botao:hover {
+    background-color: var(--cor3);
+    color: black;
+}
+
+a.botao > i {
+    font-size: 0.8em;
+}
+
+/* Dispositivo tablet*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    
+
     html, body {
         background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
     }
@@ -81,6 +166,7 @@ div#form {
     }
 }
 
+/* Telas maiores */
 @media screen and (min-width: 992px) {
     html, body {
         background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
@@ -100,5 +186,9 @@ div#form {
         float: right;
         width: 50%;
         height: 100%;
+    }
+
+    div#form > p {
+        font-size: 1em;
     }
 }
