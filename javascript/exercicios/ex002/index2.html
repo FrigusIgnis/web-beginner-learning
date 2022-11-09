@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à JS</title>
+</head>
+<body>
+    <h1>Default</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium recusandae voluptatem tempora libero voluptatibus repudiandae asperiores dolores dolor neque aspernatur. Expedita dolores iste odio corporis praesentium laboriosam, recusandae fugit possimus!</p>
+
+
+    <script>
+        let num1 = window.prompt("Digite um número: ");
+        let num2 = window.prompt("Digite outro número: ");
+
+        let soma = Number(num1) + Number(num2);
+
+        let frase = "JavaScript";
+
+        // "Este é um " + var + " de concatenação" -- Concatenação de string
+
+        // Number.parseInt(n) -- Inteiro
+        // Number.parseFloat(n) -- Real
+
+        // String(n) -- Texto
+        // n.toString() -- Atribuição de tipo Texto
+
+        // `Este é um exemplo de ${var} formatado` -- Template String | Placeholder
+
+        window.alert(`A soma entre ${num1} e ${num2} é ${soma}, feita no ${frase}`);
+
+
+
+    </script>
+</body>
+</html>

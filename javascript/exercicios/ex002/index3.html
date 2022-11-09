@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 1em Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let nome = window.prompt("Insira seu nome: ");
+
+        document.writeln(`Seu nome tem ${nome.length} letras<br>`);
+        
+        document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`);
+
+        document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()}<br>`);
+
+
+        // Formatação de números
+
+        // n.toFixed(qtd); -- Adicionar casas decimais
+
+        // n.toFixed(qtd).replace('.', ','); -- Repor a pontuação de contagem(. para ,)
+
+        // n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}); -- Localizar na região desejada e configurar conforme os parâmetros fornecidos
+
+        document.writeln(`A quantidade de letras do seu nome com 2 casas decimais: ${(nome.length).toFixed(2)}`);
+    </script>
+</body>
+</html>
