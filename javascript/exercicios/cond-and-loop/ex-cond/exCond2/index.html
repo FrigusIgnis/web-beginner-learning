@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Verificador de idade</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body onload="loading()">
+    <header>
+        <h1 id="title">Verificador de Idade</h1>
+    </header>
+
+    <main id="principal">
+        <div id="anoCampo">
+            <label for="iano">Ano de Nascimento: </label>
+            <input type="number" name="anoNasc" id="iano" min="1900" step="1">
+        </div>
+
+        <div id="genCampo">
+            <label for="genero">Gênero: </label>
+
+            <input type="radio" name="genero" id="isexMasc" value="Masculino" class="inputRadio" checked>
+            <label for="isexMasc">Masculino</label>
+
+            <input type="radio" name="genero" id="isexFem" value="Feminino" class="inputRadio">
+            <label for="isexFem">Feminino</label>
+
+
+            <input type="radio" name="genero" id="isexNbin" value="Não-binário" class="inputRadio">
+            <label for="isexnbin">Não-binário</label>
+        </div>
+
+        <div id="botao">
+            <input type="button" value="Verificar" onclick="verificarIdade()">
+        </div>
+
+        <div id="msg"></div>
+    </main>
+
+    <footer>
+        <p>Feito por <a href="https://github.com/NicolasSilvaDA" target="_blank" rel="external">Nicolas Silva</a></p>
+    </footer>
+
+    <script src="scripts/exCond2.js"></script>
+</body>
+
+</html>
